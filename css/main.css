@@ -1,0 +1,330 @@
+/* Configuración general*/
+
+html body{
+	/*background-color: #5e67a5;*/
+  font-family: 'UbuntuLight';
+  font-size: 16px;
+  color: #4d4d4d;
+}
+
+/*Agregamos las fuentes*/
+@font-face{
+	font-family: GothamBlack;
+    src: url(../fonts/Gotham-Black.ttf);
+}
+@font-face{
+  font-family: GothamBook;
+    src: url(../fonts/Gotham-Book.otf);
+}
+@font-face{
+  font-family: UbuntuLight;
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+@font-face{
+  font-family: UbuntuBold;
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+/*Navbar*/
+.logo{
+	position: absolute;
+	padding: 2%;
+}
+/* barra de navegación fija */
+#navscroll{
+	position: fixed;
+	width: 100%;
+  z-index: 125;
+}
+
+.inline > li > a{
+	color: white;
+	display: block;
+	font-size: 25px;
+	padding: 10px 0;
+	text-decoration: none;
+	font-family: 'GothamBlack';
+	margin-right: 10px;
+}
+
+.socialicon{
+    display:inline-block;
+    border:0;
+    margin-top: 10px; 
+
+}
+
+
+#hiden{
+  position: absolute;
+  z-index: 100;
+  width: 100%
+}
+
+.support-menu{
+  z-index: 50;
+}
+
+
+
+}
+.support-menu * {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;}
+
+div.support-menu {
+    margin: 0 75%;
+    width: 25%;
+}
+.support-menu nav.vertical {
+	overflow: hidden;
+	text-align: center;
+}
+.support-menu nav.vertical > ul {
+	list-style-type: none;
+}
+.support-menu nav.vertical > ul > li {
+	display: block;
+	color: white;
+	font-family: 'GothamBlack';
+
+}
+/*links de navbar*/
+     
+
+
+.support-menu nav.vertical > ul > li > div > ul {
+	list-style-type: none;
+}
+/*efectos de navbar*/
+.support-menu nav.vertical > ul > li > div > ul > li > a {
+	color: white;
+	display: block;
+	font-size: 25px;
+	padding: 5px 0;
+	text-decoration: none;
+	transition: all 0.15s linear;
+}
+
+.support-menu nav.vertical > ul > li > div > ul > li:hover > a {
+	color: rgb(255,255,255);
+	padding: 10px 0 10px 50px;}
+/* Íconos menú */
+a >.fa{
+	font-size: 30px;
+	color: white;
+}
+
+/* efectos de social icons */
+.social
+{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 500ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 500ms ease-in;
+    transform: scale(1);   
+
+}
+.social:hover
+{
+    z-index: 2;
+    -webkit-transition: all 500ms ease-in;
+    -webkit-transform: scale(1.25);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.25);   
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.25);
+    transition: all 500ms ease-in;
+    transform: scale(1.25);
+}
+/* Termina Navbar*/
+
+/*sliderrrr*/
+/* frases */
+div .tp-caption{
+  font-family: 'UbuntuLight';
+  color: white;
+  font-size: 30px !important;
+  line-height: 40px;
+}
+
+#main-slide{
+  background: rgba(68,6,161,1);
+  background: -moz-linear-gradient(left, rgba(68,6,161,1) 0%, rgba(154,82,212,0.99) 39%, rgba(154,82,212,0.99) 53%, rgba(154,82,212,0.99) 64%, rgba(68,6,161,0.98) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68,6,161,1)), color-stop(39%, rgba(154,82,212,0.99)), color-stop(53%, rgba(154,82,212,0.99)), 
+    color-stop(64%, rgba(154,82,212,0.99)), color-stop(100%, rgba(68,6,161,0.98)));
+  background: -webkit-linear-gradient(left, rgba(68,6,161,1) 0%, rgba(154,82,212,0.99) 39%, rgba(154,82,212,0.99) 53%, rgba(154,82,212,0.99) 64%, rgba(68,6,161,0.98) 100%);
+  background: -o-linear-gradient(left, rgba(68,6,161,1) 0%, rgba(154,82,212,0.99) 39%, rgba(154,82,212,0.99) 53%, rgba(154,82,212,0.99) 64%, rgba(68,6,161,0.98) 100%);
+  background: -ms-linear-gradient(left, rgba(68,6,161,1) 0%, rgba(154,82,212,0.99) 39%, rgba(154,82,212,0.99) 53%, rgba(154,82,212,0.99) 64%, rgba(68,6,161,0.98) 100%);
+  background: linear-gradient(to right, rgba(68,6,161,1) 0%, rgba(154,82,212,0.99) 39%, rgba(154,82,212,0.99) 53%, rgba(154,82,212,0.99) 64%, rgba(68,6,161,0.98) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4406a1', endColorstr='#4406a1', GradientType=1 );
+}
+
+/*carousel de about*/
+.quotes{
+    display: none;
+}
+
+
+#myCarousel{
+  background-color: white;
+}
+
+.nav-item a{
+  font-family: 'UbuntuLight';
+  font-size: 30px;
+  text-transform: lowercase;
+  color: #333333;
+  -webkit-transition: font-size .5s; /* For Safari 3.1 to 6.0 */
+  transition: font-size .5s;
+  padding: 0;
+}
+.nav-item a:hover{
+  font-size: 34px;
+  color: #666666;
+}
+#aboutMenu > #bout .active > a {
+    font-family: 'GothamBlack';
+    font-size: 50px;
+    color: black;
+    padding-bottom: 40px;
+}
+
+#aboutMenu > .active > a {
+    color: #999999;
+    font-size: 34px;
+    font-family: 'UbuntuLight';
+}
+
+
+
+.lil-menu >ul{
+  padding: 3% 0 45px 25%;
+}
+
+#bout{
+  font-family: 'GothamBlack' !important;
+  font-size: 50px !important; 
+  color: black !important;
+  padding-bottom: 40px;
+}
+
+.sub-menu{
+  background-color: #ededed;
+}
+
+.fixed-text{
+  padding-top: 15%;
+  font-size: 50px;
+  font-family: 'GothamBook';
+  color: #666666;
+}
+
+.quotes{
+  padding-left: 5%;
+  font-size: 70px;
+  font-family: 'GothamBlack';
+  color: #666666;
+}
+
+.text-box{
+  width: 400px;
+  line-height: 2;
+
+}
+
+
+.content{
+  margin: 5%;
+}
+
+.title{
+  font-family: 'UbuntuBold';
+  font-size:20px;
+  line-height: 10px;
+}
+
+.subtitle{
+  font-size: 50px;
+  font-family: 'UbuntuBold';
+  text-align: center;
+}
+
+.space{
+  border-top: 1px solid #6d6d6d;
+    padding-top: 3%;
+    margin-top: 10%;
+}
+
+/*clientes imagenes*/
+
+.clients{
+ padding-top: 10%;
+}
+
+.clients-1{
+  border-top: 1px solid #ededed;
+}
+
+.image{
+  text-align: center;
+}
+
+.pictures {
+  margin: 0 auto;
+  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: .5s ease-in-out; 
+  transition: .5xs ease-in-out;
+  margin-top: 5% !important; 
+  margin-bottom: 5% !important;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 100px;
+}
+
+.pictures:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.25);
+}
+
+
+/*botón to top*/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#btn-primary {
+    
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#btn-primary:hover {
+ background-color: transparent;
+ border-color: transparent;
+}
+
+#btn-primary:active:focus {
+ background-color: transparent;
+ border-color: transparent;
+}
+

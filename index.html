@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""/>
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PONG" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="https://pong.com.mx/" />
+      
+    <meta property="og:site_name" content="PONG" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:creator" content="" />
+
+    <title>PONG</title>
+    <!-- <link rel="icon" type="image/png" href="img/favicon.png" />-->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Slider Revolution CSS Files -->
+        <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+        <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+        <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/main.js"></script>
+   
+    <!-- Slider Revolution core JavaScript files -->
+        <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Slider Revolution extension scripts. ONLY NEEDED FOR LOCAL TESTING --> 
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        
+        
+    <![endif]-->
+</head>
+
+<body>
+<!-- Inicia Navbar -->
+<!-- Hola extraño, si ves algo raro o que no funciona avísame -->
+  <div><!-- body-odi -->
+    <div id="hiden">
+      <a class="navbar-brand" href="index.html"><img src="images/logo-pong.png" class="logo mobile-logo"></a>
+        <div class="support-menu">
+          <nav class="vertical">
+            <ul>
+              <li>
+                <div>
+                  <ul>
+                    <!-- Links de navbar -->
+                    <li><a href="#">hello | hola </a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><span><a href="#"><i class="social fa fa-instagram" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="social fa fa-vimeo-square" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="social fa fa-behance-square" aria-hidden="true"></i></a></span></li>
+                    <!-- Terminan links -->
+                  </ul>
+                </div>
+              </li>
+            
+            </ul>
+          </nav>
+        </div><!-- support -->
+    </div><!-- hidden -->
+
+    <!-- hidden menu on scroll -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="navscroll">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand navbar-left" href="#"><img src="images/logo-pong.png" class="mobile-logo"></a>
+          </div><!--navbar-header -->
+          <ul class="inline nav justify-content-end">
+            <li class="active"><a href="#">hello</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">contact</a></li>
+            <li><span><a href="#"><i class="socialicon fa fa-instagram" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="socialicon fa fa-vimeo-square" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="socialicon fa fa-behance-square" aria-hidden="true"></i></a></span></li>
+                  <!-- Terminan links -->
+          </ul>
+        </div><!-- container -->
+      </nav>
+    </div><!-- container -->
+ 
+<!-- Termina Navbar -->
+<!-- Inicia Slider -->
+<div class="rev_slider_wrapper fullscreen-container" data alias="focus-parallax">
+ 
+    <!-- the ID here will be used in the inline JavaScript below to initialize the slider -->
+    <div id="rev_slider_1" class="rev_slider fullscreenbanner" data-version="5.3.0.2" style="display:none">
+ 
+        <ul>
+          <li id="main-slide" data-transition="fade" data-slotamount="default" class="first-layer" bgcolor="#55096B">
+            <div class="tp-caption tp-resizeme rs-parallaxlevel-5" 
+              id="slide-2957-layer-1" 
+              data-x="['center','center','center','center']" data-hoffset="['50%','50%','50%','50%']" 
+              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+              data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+   
+              data-type="image"  
+              data-responsive_offset="on" 
+
+              data-frames='[{"from":"x:200px;rZ:45deg;opacity:0;","speed":2000,"to":"o:1;","delay":800,"ease":"Power4.easeOut"},{"delay":"wait","speed":700,"to":"auto:auto;","ease":"Power2.easeInOut"}]'
+              data-textAlign="['center','center','center','center']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5; white-space: nowrap; line-height: 70px;text-transform:left;"><div class="rs-looped rs-wave"  data-speed="6" data-angle="0" data-radius="2px" data-origin="50% 50%"><img src="images/publicidad-inteligente-creativa-cdmx.png" alt="" data-ww="['500px','500px','500px','500px']" data-hh="['500px','500px','500px','500px']" width="1000" height="600" data-no-retina></div> 
+            </div>
+
+            <div class="tp-caption tp-resizeme rs-parallaxlevel-1" 
+             id="slide-2957-layer-2" 
+             data-x="['center','center','center','center']" data-hoffset="0" 
+             data-y="['middle','middle','middle','middle']" data-voffset="-90%" 
+            data-width="none"
+            data-height="none"
+            data-whitespace="nowrap"
+ 
+            data-type="image"  
+            data-responsive_offset="on" 
+
+            data-frames='[{"from":"y:300px;rZ:90deg;opacity:0;","speed":2000,"to":"o:1;","delay":650,"ease":"Power4.easeOut"},{"delay":"wait","speed":700,"to":"auto:auto;","ease":"Power2.easeInOut"}]'
+            data-textAlign="['left','left','left','left']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+
+            style="z-index: 13; white-space: nowrap; line-height: 70px;text-transform:left;"><div class="rs-looped rs-wave"  data-speed="7" data-angle="0" data-radius="2px" data-origin="50% 50%"><img src="images/agencia-creativa-innovacion-cdmx.png" alt="" data-ww="['150px','150px','150px','150px']" data-hh="['150px','150px','150px','150px']" width="200" height="200" data-no-retina></div>
+            </div>
+          </li>
+         <li data-transition="fade" data-slotamount="default" class="second-layer">
+ 
+         
+            <img src="images/diseño-creativo-cdmx.jpg" data-bgfit="cover" alt="Sky" data-glitch-count="3" class="glitchme" >
+          
+            <div class="tp-caption   tp-resizeme" 
+               id="slide-2975-layer-2" 
+               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+               data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-100','-50']" 
+                    data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+          
+              data-type="image" 
+              data-responsive_offset="on" 
+
+              data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5;text-transform:left;border-width:0px;"><img src="images/pforpong.png" alt="" data-ww="['200px','200px','200px','200px']" data-hh="['200px','200px','200px','200px']" width="1000" height="600" data-no-retina> 
+            </div>
+             
+            <div class="tp-caption   tp-resizeme" 
+               id="slide-2975-layer-3" 
+               data-x="['left','left','left','left']" data-hoffset="['190','190','190','190']" 
+               data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                    data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+         
+              data-type="image" 
+              data-responsive_offset="on" 
+
+              data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5;text-transform:left;border-width:0px;"><div class="rs-looped rs-wave" data-speed="7" data-angle="0" data-radius="5px" data-origin="50% 50%"><p class="floating-text">Do something new</p></div>
+            </div>
+             
+            <div class="tp-caption   tp-resizeme" 
+               id="slide-2975-layer-4" 
+               data-x="['right','right','right','right']" data-hoffset="['380','380','380','380']" 
+               data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                    data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+         
+              data-type="image" 
+              data-responsive_offset="on" 
+
+              data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5;text-transform:left;border-width:0px;"><div class="rs-looped rs-wave" data-speed="7" data-angle="0" data-radius="5px" data-origin="50% 50%"><p class="floating-text">Everyday</p></div>
+            </div>
+          </li>
+ 
+          <li data-transition="fade" data-slotamount="default"   class="first-layer">
+       
+              
+            <img src="images/posicionamiento-web-cdmx.jpg" alt="Ocean" class="rev-slidebg">
+              <div class="tp-caption   tp-resizeme" 
+               id="slide-2975-layer-2" 
+               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+               data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-100','-50']" 
+                    data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+          
+              data-type="image" 
+              data-responsive_offset="on" 
+
+              data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5;text-transform:left;border-width:0px;"><img src="images/pforpong.png" alt="" data-ww="['200px','200px','200px','200px']" data-hh="['200px','200px','200px','200px']" width="1000" height="600" data-no-retina> 
+            </div>
+             
+            <div class="tp-caption   tp-resizeme" 
+               id="slide-2975-layer-3" 
+               data-x="['left','left','left','left']" data-hoffset="['250','250','250','250']" 
+               data-y="['middle','middle','middle','middle']" data-voffset="['-100','-100','-100','-100']" 
+                    data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+         
+              data-type="image" 
+              data-responsive_offset="on" 
+
+              data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5;text-transform:left;border-width:0px;"><div class="rs-looped rs-wave" data-speed="7" data-angle="0" data-radius="5px" data-origin="50% 50%"><p class="floating-text">Every Problem</p></div>
+            </div>
+
+            <div class="tp-caption   tp-resizeme" 
+               id="slide-2975-layer-3" 
+               data-x="['left','left','left','left']" data-hoffset="['190','190','190','190']" 
+               data-y="['middle','middle','middle','middle']" data-voffset="['20','20','20','20']" 
+                    data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+         
+              data-type="image" 
+              data-responsive_offset="on" 
+
+              data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5;text-transform:left;border-width:0px;"><div class="rs-looped rs-wave" data-speed="7" data-angle="0" data-radius="5px" data-origin="50% 50%"><p class="floating-text">Is an Opportunity</p></div>
+            </div>
+             
+            <div class="tp-caption   tp-resizeme" 
+               id="slide-2975-layer-4" 
+               data-x="['right','right','right','right']" data-hoffset="['200','200','200','200']" 
+               data-y="['middle','middle','middle','middle']" data-voffset="['-50','-50','-50','-50']" 
+                    data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+         
+              data-type="image" 
+              data-responsive_offset="on" 
+
+              data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+              data-textAlign="['left','left','left','left']"
+              data-paddingtop="[0,0,0,0]"
+              data-paddingright="[0,0,0,0]"
+              data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]"
+
+              style="z-index: 5;text-transform:left;border-width:0px;"><div class="rs-looped rs-wave" data-speed="7" data-angle="0" data-radius="5px" data-origin="50% 50%"><p class="floating-text">For Creative Solution</p></div>
+            </div>
+       
+          </li>
+        </ul>
+ 
+    </div><!-- slider wrapper -->
+
+  </div><!-- slider container -->
+  <section id="about">
+    <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="false">
+      <div class="carousel-inner">
+        <div class="row sub-menu" id="sub-menu">
+          <div class="col-md-4 lil-menu">
+            <ul class="nav flex-column" id="aboutMenu">
+                <li data-target="#myCarousel" data-slide-to="0" class="nav-item"><a class="nav-link active" id="bout" href="#">About</a></li>
+                <li  class="nav-item" data-target="#myCarousel" data-slide-to="1"><a class="nav-link" href="#">Services</a></li>
+                <li  class="nav-item" data-target="#myCarousel" data-slide-to="2"><a class="nav-link" href="#">How </a></li>
+                <li  class="nav-item" data-target="#myCarousel" data-slide-to="3"><a class="nav-link" href="#">Culture</a></li>
+            </ul>
+          </div><!-- lil-menu --> 
+          <div class="col-md-4 ml-md-auto loop-text">
+            <p class="fixed-text" id="fixed-text">we are</p>
+            <h3 class="quotes" id="quotes">designers</h3>
+            <h3 class="quotes" id="quotes">developers</h3>
+            <h3 class="quotes" id="quotes">thinkers</h3>
+            <h3 class="quotes" id="quotes">gamers</h3>
+            <h3 class="quotes" id="quotes">the devil</h3>
+          </div><!-- loop-text --> 
+        </div><!-- row -->  
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row align-items-center content">
+              <div class="col-md-6">
+                <div class="text-box">
+                  <span>We are a full service digital / analog agency, our work encompasses brand identity design and visual communication, products and packaging, UX websites and digital experiences, advertising and corporate communications. </span>
+                </div><!-- text-box -->  
+              </div><!-- col-md-6 -->  
+              <div class="col-md-6 text-box">
+                <div class="text-box">
+                  <p class="title">Our Value</p>
+                  <p>We are those who do not give laziness "a little change". Those who "we send today in the afternoon", those who understand what is the "green Christmas" or "a little bigger logo", those who put "more design" on a proposal, those who answer check it out, sent it to you a while ago , those who understand that "urgency" is "now", those who make their creative work to help you make your communication better.</p>
+                </div><!--text-box -->  
+              </div><!-- col-md-6 -->  
+            </div><!-- row -->  
+            <div class="row align-items-center space">
+              <div class="col-md-4">
+                <p class="subtitle">clients</p>
+              </div><!-- col-md-2 --> 
+                <div class="col-md-8">
+                  <p>Think of us as more of a creative partner than a resource. This means we have shared perspective on how we can work together to achieve your goals. Basically, your new BFF</p>
+            </div><!-- col-md-10-->   
+                </div><!-- row -->  
+                <div class="row clients">
+                  <div class="col-sm-2 image" style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/lease-plan.png" alt="lease plan" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/as-deporte.png" alt="as deporte" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/club-premier.png" alt="club premier" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/bachoco.png" alt="bachoco" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/maersk.png" alt="Maersk" >
+                  </div>
+                  <div class="col-sm-2  image">
+                    <img class="img-responsive pictures" src="images/logos/dupont.png" alt="dupont" >
+                  </div>
+                </div> 
+
+                <div class="row clients-1">
+                  <div class="col-sm-2 image"  style="border-right: 1px solid #ededed;" >
+                    <img class="img-responsive pictures" src="images/logos/helvex.png" alt="Helvex" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/ibis.png" alt="Hoteles Ibis" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/imef.png" alt="IMEF" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/penske.png" alt="penske" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/ula.png" alt="ula" >
+                  </div>
+                  <div class="col-sm-2  image">
+                    <img class="img-responsive pictures" src="images/logos/banregio.png" alt="Banregio" >
+                  </div>
+                </div>
+
+                <div class="row clients-1">
+                  <div class="col-sm-2 image" style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/hino.png" alt="Hino" >
+                  </div>
+                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/novotel.png" alt="Novotel" >
+                  </div>
+                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/pearsons.png" alt="Pearsons" >
+                  </div>
+                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/rock-n-roll.png" alt="Rock-n-Roll">
+                  </div>
+                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/iron-man.png" alt="Iron Man" >
+                  </div>
+                  <div class="col-sm-2  image">
+                    <img class="img-responsive pictures" src="images/logos/walmart.png" alt="walmart" >
+                  </div>
+                </div> 
+
+                <div class="row clients-1" style="padding-bottom: 40px;">
+                  <div class="col-sm-2 image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/chemours.png" alt="Chemours" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/kevlar.png" alt="Kevlar" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/chinoin.png" alt="Chinoin" >
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/sherwin-williams.png" alt="Rock-n-Roll">
+                  </div>
+                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
+                    <img class="img-responsive pictures" src="images/logos/universum.png" alt="Universum" >
+                  </div>
+                  <div class="col-sm-2  image">
+                    <img class="img-responsive pictures" src="images/logos/accor-hotels.png" alt="Accor Hotels" >
+                  </div>
+                </div>  
+          </div> <!-- conteiner -->    
+        </div><!-- carousel-item -->  
+        <div class="carousel-item">
+          SECOND
+        </div><!-- carousel-item -->  
+        <div class="carousel-item">
+          THIRD
+        </div><!-- carousel-item -->  
+        <div class="carousel-item">
+          FOURTH
+        </div><!-- carousel-item -->
+      </div><!-- carousel inner-->
+      
+    </div><!-- myCarousel -->
+  </section>
+</div><!-- body-odi -->
+ <a id="back-to-top" href="#" class="back-to-top" role="button" data-placement="left"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true" style="color: #009ee2;"></i></a>
+</body>
+
+</html>
