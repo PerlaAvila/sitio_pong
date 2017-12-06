@@ -35,10 +35,15 @@ html body{
 	position: fixed;
 	width: 100%;
   z-index: 125;
-}
+  background-color: rgba(255, 255, 255, 0.94);
 
+}
+#navigation{
+  padding: 0;
+  margin: 0;
+}
 .inline > li > a{
-	color: white;
+	color: #666666;
 	display: block;
 	font-size: 25px;
 	padding: 10px 0;
@@ -52,6 +57,10 @@ html body{
     border:0;
     margin-top: 10px; 
 
+}
+a >.socialicon{
+  font-size: 30px;
+  color: #666666;
 }
 
 
@@ -114,7 +123,7 @@ div.support-menu {
 	color: rgb(255,255,255);
 	padding: 10px 0 10px 50px;}
 /* Íconos menú */
-a >.fa{
+a >.social{
 	font-size: 30px;
 	color: white;
 }
@@ -176,6 +185,8 @@ div .tp-caption{
 }
 
 
+
+
 #myCarousel{
   background-color: white;
 }
@@ -190,7 +201,7 @@ div .tp-caption{
   padding: 0;
 }
 .nav-item a:hover{
-  font-size: 34px;
+  font-size: 38px;
   color: #666666;
 }
 #aboutMenu > #bout .active > a {
@@ -204,6 +215,7 @@ div .tp-caption{
     color: #999999;
     font-size: 34px;
     font-family: 'UbuntuLight';
+    text-decoration: underline;
 }
 
 
@@ -225,14 +237,14 @@ div .tp-caption{
 
 .fixed-text{
   padding-top: 15%;
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'GothamBook';
   color: #666666;
 }
 
-.quotes{
+#quotes{
   padding-left: 5%;
-  font-size: 70px;
+  font-size: 55px;
   font-family: 'GothamBlack';
   color: #666666;
 }
@@ -251,7 +263,7 @@ div .tp-caption{
 .title{
   font-family: 'UbuntuBold';
   font-size:20px;
-  line-height: 10px;
+  line-height: 20px;
 }
 
 .subtitle{
@@ -285,8 +297,12 @@ div .tp-caption{
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
   filter: gray; /* IE5+ */
   -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -o-filter: grayscale(1);
+  -moz-filter: grayscale(1);
   -webkit-transition: .5s ease-in-out; 
-  transition: .5xs ease-in-out;
+  -o-transition: .5s ease-in-out; 
+  -moz-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   margin-top: 5% !important; 
   margin-bottom: 5% !important;
   padding-top: 20px;
@@ -300,6 +316,32 @@ div .tp-caption{
   -webkit-transform: scale(1.25);
 }
 
+/*servicios*/
+
+.bigger-text{
+  font-size: 30px;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+
+.text-row > .text-box{
+  padding: 3% 6%;
+}
+
+
+/* How */
+
+.align-self-start > .bigger-text{
+  padding-left: 10%;
+}
+
+.align-self-end > .title{
+  margin-top: 5%;
+}
+
+div > .align-self-center{
+  padding: 5%;
+}
 
 /*botón to top*/
 .back-to-top {
@@ -326,5 +368,65 @@ div .tp-caption{
 #btn-primary:active:focus {
  background-color: transparent;
  border-color: transparent;
+}
+
+
+/* Inicia footer */
+
+.footer{
+  font-family: 'UbuntuBold';
+  font-size: 30px;
+  line-height: 25px;
+}
+
+footer{
+  background-color: #666666;
+  color: white;
+  padding: 50px;
+}
+
+footer p{
+  line-height: 10px;
+}
+
+div > .form-control{
+      background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+input.form-control:focus{
+  background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+textarea.form-control:focus{
+  background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.submit{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+
+#animation-right {
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+#animation-left {
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+#animation-up {
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 

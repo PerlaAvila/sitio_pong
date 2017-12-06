@@ -112,6 +112,19 @@ $(document).ready(function(){
 						$('.nav li').first().addClass('active');	
 					}
 				}
+
+                if ($('#itemTwo').hasClass('active')){
+                    $('#text-1, #text-3, #text-4').hide() && $('#text-2').show();
+                }
+                else if ($('#itemThree').hasClass('active')){
+                    $('#text-3').show() && $('#text-1, #text-2, #text-4').hide();
+                }
+                else if ($('#itemFour').hasClass('active')){
+                    $('#text-4').show() && $('#text-1, #text-2, #text-3').hide();
+                }
+                else if ($('#itemOne').hasClass('active')){
+                    $('#text-1').show() && $('#text-4, #text-2, #text-3').hide();
+                }
 				clickEvent = false;
 			});
 			
@@ -164,6 +177,77 @@ $(document).ready(function(){
             }, 800);
             return false;
         });
+
+        //carousel animations
+
+        var $animation = $('.animation-right');
+        var $animation_one = $('.animation-left');
+        var $animation_two = $('.animation-down');
+        var $window = $(window);
+
+        function check_if_in_view() {
+          var window_height = $window.height();
+          var window_top_position = $window.scrollTop();
+          var window_bottom_position = (window_top_position + window_height);
+         
+
+            $.each($animation_one, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+         
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+              $element.addClass('animated fadeInLeft')
+              console.log('rrrr');
+            } else {
+              $element.removeClass('animated fadeInLeft')
+              console.log('jeje');;
+            }
+          });
+          $.each($animation, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+         
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+              $element.addClass('animated fadeInRight');
+            } else {
+                $element.removeClass('animated fadeInRight')
+              console.log('jeje');;
+            }
+          });
+          $.each($animation_two, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+         
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+              $element.addClass('animated slideInUp');
+            } else {
+                $element.removeClass('animated slideInUp')
+              console.log('jeje');;
+            }
+          });
+          
+        }
+        
+          
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+
+
+
+        
         
         
 

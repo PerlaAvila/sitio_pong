@@ -25,8 +25,9 @@
     <title>PONG</title>
     <!-- <link rel="icon" type="image/png" href="img/favicon.png" />-->
     <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -68,7 +69,7 @@
 
 <body>
 <!-- Inicia Navbar -->
-<!-- Hola extraño, si ves algo raro o que no funciona avísame -->
+<!-- Hola extraño, fuera de mi jardín -->
   <div><!-- body-odi -->
     <div id="hiden">
       <a class="navbar-brand" href="index.html"><img src="images/logo-pong.png" class="logo mobile-logo"></a>
@@ -80,9 +81,9 @@
                   <ul>
                     <!-- Links de navbar -->
                     <li><a href="#">hello | hola </a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#about">nosotros</a></li>
+                    <li><a href="#">portafolio</a></li>
+                    <li><a href="#contact">contacto</a></li>
                     <li><span><a href="#"><i class="social fa fa-instagram" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="social fa fa-vimeo-square" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="social fa fa-behance-square" aria-hidden="true"></i></a></span></li>
                     <!-- Terminan links -->
                   </ul>
@@ -95,17 +96,17 @@
     </div><!-- hidden -->
 
     <!-- hidden menu on scroll -->
-    <div class="container-fluid">
+    <div class="container" id="navigation">
       <nav class="navbar navbar-inverse navbar-fixed-top" id="navscroll">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand navbar-left" href="#"><img src="images/logo-pong.png" class="mobile-logo"></a>
+            <a class="navbar-brand navbar-left" href="#"><img src="images/logo-pong-dark.png" class="mobile-logo" width="150px"></a>
           </div><!--navbar-header -->
           <ul class="inline nav justify-content-end">
             <li class="active"><a href="#">hello</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#about">nosotros</a></li>
+            <li><a href="#">portafolio</a></li>
+            <li><a href="#">contacto</a></li>
             <li><span><a href="#"><i class="socialicon fa fa-instagram" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="socialicon fa fa-vimeo-square" aria-hidden="true"></i> &nbsp;</a><a href="#"><i class="socialicon fa fa-behance-square" aria-hidden="true"></i></a></span></li>
                   <!-- Terminan links -->
           </ul>
@@ -167,7 +168,7 @@
          <li data-transition="fade" data-slotamount="default" class="second-layer">
  
          
-            <img src="images/diseño-creativo-cdmx.jpg" data-bgfit="cover" alt="Sky" data-glitch-count="3" class="glitchme" >
+            <img src="images/diseno-creativo-cdmx.jpg" data-bgfit="cover" alt="Sky" data-glitch-count="3" class="glitchme" >
           
             <div class="tp-caption   tp-resizeme" 
                id="slide-2975-layer-2" 
@@ -331,138 +332,280 @@
     <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="false">
       <div class="carousel-inner">
         <div class="row sub-menu" id="sub-menu">
-          <div class="col-md-4 lil-menu">
+          <div class="col-md-4 lil-menu animation-left">
             <ul class="nav flex-column" id="aboutMenu">
-                <li data-target="#myCarousel" data-slide-to="0" class="nav-item"><a class="nav-link active" id="bout" href="#">About</a></li>
-                <li  class="nav-item" data-target="#myCarousel" data-slide-to="1"><a class="nav-link" href="#">Services</a></li>
-                <li  class="nav-item" data-target="#myCarousel" data-slide-to="2"><a class="nav-link" href="#">How </a></li>
-                <li  class="nav-item" data-target="#myCarousel" data-slide-to="3"><a class="nav-link" href="#">Culture</a></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="nav-item"><a class="nav-link active" id="bout" href="#">Nosotros</a></li>
+                <li  class="nav-item" data-target="#myCarousel" data-slide-to="1"><a class="nav-link" href="#">Servicios</a></li>
+                <li  class="nav-item" data-target="#myCarousel" data-slide-to="2"><a class="nav-link" href="#">Cómo </a></li>
+                <li  class="nav-item" data-target="#myCarousel" data-slide-to="3"><a class="nav-link" href="#">Cultura</a></li>
             </ul>
           </div><!-- lil-menu --> 
-          <div class="col-md-4 ml-md-auto loop-text">
-            <p class="fixed-text" id="fixed-text">we are</p>
-            <h3 class="quotes" id="quotes">designers</h3>
-            <h3 class="quotes" id="quotes">developers</h3>
-            <h3 class="quotes" id="quotes">thinkers</h3>
-            <h3 class="quotes" id="quotes">gamers</h3>
-            <h3 class="quotes" id="quotes">the devil</h3>
+          <div class="col-md-5 ml-md-auto loop-text animation-right">
+            <div id="text-1">
+              <p class="fixed-text" id="fixed-text">somos</p>
+              <h3 class="quotes" id="quotes">diseñadores</h3>
+              <h3 class="quotes" id="quotes">desarrolladores</h3>
+              <h3 class="quotes" id="quotes">pensadores</h3>
+              <h3 class="quotes" id="quotes">gamers</h3>
+              <h3 class="quotes" id="quotes">cat lovers</h3>
+            </div> 
+            <div id="text-2" style="display: none;">
+              <p class="fixed-text" id="fixed-text">estrategicamente</p>
+              <h3 class="quote" id="quotes">creativo</h3>
+            </div> 
+            <div id="text-3" style="display: none;">
+              <p class="fixed-text" id="fixed-text">siendo pequeños</p>
+              <h3 class="quote" id="quotes">vamos a los detalles</h3>
+            </div> 
+            <div id="text-4" style="display: none;">
+              <p class="fixed-text" id="fixed-text">lo que hacemos</p>
+              <h3 class="quote" id="quotes">nos forma</h3>
+            </div> 
           </div><!-- loop-text --> 
         </div><!-- row -->  
-        <div class="carousel-item active">
+        <div class="carousel-item active" id="itemOne">
           <div class="container">
             <div class="row align-items-center content">
               <div class="col-md-6">
-                <div class="text-box">
-                  <span>We are a full service digital / analog agency, our work encompasses brand identity design and visual communication, products and packaging, UX websites and digital experiences, advertising and corporate communications. </span>
+                <div class="text-box animation-left">
+                  <span>Somos una agencia de nueva generación enfocada a la creación de estrategia que va de la mano con la creatividad de nuestro equipo. Ofrecemos servicios integrales en diseño que cubran las necesidades de nuestros clientes superando sus expectativas. </span>
                 </div><!-- text-box -->  
               </div><!-- col-md-6 -->  
               <div class="col-md-6 text-box">
-                <div class="text-box">
-                  <p class="title">Our Value</p>
-                  <p>We are those who do not give laziness "a little change". Those who "we send today in the afternoon", those who understand what is the "green Christmas" or "a little bigger logo", those who put "more design" on a proposal, those who answer check it out, sent it to you a while ago , those who understand that "urgency" is "now", those who make their creative work to help you make your communication better.</p>
+                <div class="text-box animation-right">
+                  <p class="title">Nuestra Oferta</p>
+                  <p>Sabemos y entendemos que las necesidades de tu marca no pueden esperar y, sobretodo, queremos ofrecerte una comunicación íntegra para dar una verdadera solución basada en estrategia y creatividad. 
+                  Tenemos la capacidad de transmitir una idea a través del diseño y de esta manera atrer la atención del usuario, pero tambien desarrollamos metodologías para crear una estrategia sólida en marketing que respalde la creatividad que impactará nuestros clientes.</p>
                 </div><!--text-box -->  
               </div><!-- col-md-6 -->  
             </div><!-- row -->  
-            <div class="row align-items-center space">
-              <div class="col-md-4">
-                <p class="subtitle">clients</p>
-              </div><!-- col-md-2 --> 
-                <div class="col-md-8">
-                  <p>Think of us as more of a creative partner than a resource. This means we have shared perspective on how we can work together to achieve your goals. Basically, your new BFF</p>
-            </div><!-- col-md-10-->   
-                </div><!-- row -->  
-                <div class="row clients">
-                  <div class="col-sm-2 image" style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/lease-plan.png" alt="lease plan" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/as-deporte.png" alt="as deporte" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/club-premier.png" alt="club premier" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/bachoco.png" alt="bachoco" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/maersk.png" alt="Maersk" >
-                  </div>
-                  <div class="col-sm-2  image">
-                    <img class="img-responsive pictures" src="images/logos/dupont.png" alt="dupont" >
-                  </div>
-                </div> 
+            <div class="">
+              <div class="row align-items-center space">
+                <div class="col-md-4">
+                  <p class="subtitle">clientes</p>
+                </div><!-- col-md-2 --> 
+                  <div class="col-md-8">
+                    <p> No solamente seremos la agencia creativa, seremos parte de tu equipo, creando canales de comunicación efectivos; buscamos compartir tu visión y metas para que juntos alcancemos lo que quieres lograr.</p>
+              </div><!-- col-md-10-->   
+                  </div><!-- row -->  
+                  <div class="row clients">
+                    <div class="col-md-2 col-sm-4 col-xs-6 image" style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/lease-plan.png" alt="lease plan" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/as-deporte.png" alt="as deporte" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/club-premier.png" alt="club premier" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/bachoco.png" alt="bachoco" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/maersk.png" alt="Maersk" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image">
+                      <img class="img-responsive pictures" src="images/logos/dupont.png" alt="dupont" >
+                    </div>
+                  </div> 
 
-                <div class="row clients-1">
-                  <div class="col-sm-2 image"  style="border-right: 1px solid #ededed;" >
-                    <img class="img-responsive pictures" src="images/logos/helvex.png" alt="Helvex" >
+                  <div class="row clients-1 ">
+                    <div class="col-md-2 col-sm-4 col-xs-6 image"  style="border-right: 1px solid #ededed;" >
+                      <img class="img-responsive pictures" src="images/logos/helvex.png" alt="Helvex" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/ibis.png" alt="Hoteles Ibis" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/imef.png" alt="IMEF" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/penske.png" alt="penske" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/ula.png" alt="ula" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image">
+                      <img class="img-responsive pictures" src="images/logos/banregio.png" alt="Banregio" >
+                    </div>
                   </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/ibis.png" alt="Hoteles Ibis" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/imef.png" alt="IMEF" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/penske.png" alt="penske" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/ula.png" alt="ula" >
-                  </div>
-                  <div class="col-sm-2  image">
-                    <img class="img-responsive pictures" src="images/logos/banregio.png" alt="Banregio" >
-                  </div>
-                </div>
 
-                <div class="row clients-1">
-                  <div class="col-sm-2 image" style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/hino.png" alt="Hino" >
-                  </div>
-                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/novotel.png" alt="Novotel" >
-                  </div>
-                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/pearsons.png" alt="Pearsons" >
-                  </div>
-                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/rock-n-roll.png" alt="Rock-n-Roll">
-                  </div>
-                  <div class="col-sm-2  image" style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/iron-man.png" alt="Iron Man" >
-                  </div>
-                  <div class="col-sm-2  image">
-                    <img class="img-responsive pictures" src="images/logos/walmart.png" alt="walmart" >
-                  </div>
-                </div> 
+                  <div class="row clients-1 ">
+                    <div class="col-md-2 col-sm-4 col-xs-6 image" style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/hino.png" alt="Hino" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image" style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/novotel.png" alt="Novotel" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image" style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/pearsons.png" alt="Pearsons" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image" style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/rock-n-roll.png" alt="Rock-n-Roll">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image" style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/iron-man.png" alt="Iron Man" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image">
+                      <img class="img-responsive pictures" src="images/logos/walmart.png" alt="walmart" >
+                    </div>
+                  </div> 
 
-                <div class="row clients-1" style="padding-bottom: 40px;">
-                  <div class="col-sm-2 image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/chemours.png" alt="Chemours" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/kevlar.png" alt="Kevlar" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/chinoin.png" alt="Chinoin" >
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/sherwin-williams.png" alt="Rock-n-Roll">
-                  </div>
-                  <div class="col-sm-2  image"  style="border-right: 1px solid #ededed;">
-                    <img class="img-responsive pictures" src="images/logos/universum.png" alt="Universum" >
-                  </div>
-                  <div class="col-sm-2  image">
-                    <img class="img-responsive pictures" src="images/logos/accor-hotels.png" alt="Accor Hotels" >
-                  </div>
-                </div>  
+                  <div class="row clients-1 " style="padding-bottom: 40px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/chemours.png" alt="Chemours" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/kevlar.png" alt="Kevlar" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/chinoin.png" alt="Chinoin" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/sherwin-williams.png" alt="Rock-n-Roll">
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image"  style="border-right: 1px solid #ededed;">
+                      <img class="img-responsive pictures" src="images/logos/universum.png" alt="Universum" >
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6  image">
+                      <img class="img-responsive pictures" src="images/logos/accor-hotels.png" alt="Accor Hotels" >
+                    </div>
+                  </div>  
+            </div><!-- animation -->      
           </div> <!-- conteiner -->    
         </div><!-- carousel-item -->  
-        <div class="carousel-item">
-          SECOND
+        <div class="carousel-item" id="itemTwo">
+          <div class="row">
+            <div class="col align-self-start">
+              <p class="bigger-text" id="bigger-text">Entender y comunicar el mensaje de tu marca <br> será nuestra misión.</p>
+            </div> <!-- col--> 
+          </div><!-- row -->
+          <div class="row text-row">
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Marcas</p>
+                <p>No hay diferencia entre una marca pequeña o grande, colaboramos para crear una identidad y comunicación memorable, desde el naming, logotipo de la empresa y crear experiencias de marca a través de la creatividad y ejecución.</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Publicidad</p>
+                <p>No hagas anuncios, ¡tu audiencia quier que le cuentes historias! Házlos reír, pensar, que amen y se identifiquen con lo que tienes por decir y se sientan identificados. Así es la publicidad que hacemos. </p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Comunicación Interna</p>
+                <p>Colaboramos con el área de Recursos Humanos para crear canales y programas de comunicación para alcanzar las metas y objetivos de la empresa, atendiendo al más importante recurso de la compañía: el capital humano.</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Corporativo</p>
+                <p>En una empresa todo se comunica, desde una tarjeta de presentación hasta informes y cursos. Todos los niveles dentro de la institución necesitan materiales que son importantes para el negocio.</p>
+            </div>
+          </div><!-- row -->
+          <div class="row">
+            <div class="col align-self-start">
+              <p class="bigger-text" id="bigger-text">Todos los servicios</p>
+            </div> <!-- col--> 
+          </div><!-- row -->
+          <div class="row  text-row">
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Estrategia</p>
+              <p>Estrategia y planeación<br>
+                  Campañas publicitarias <br>
+                  Inbound/Content <br>
+                  Comunicación interna<br>
+                  Generación de leads</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Creatividad</p>
+              <p>Diseño <br>
+                              Branding <br>
+                              Contenido<br>
+                              Empaque y POP<br>
+                              Audiovisual<br>
+                              Producción de video<br>
+                              Motion graphics<br>
+                              Animación</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Digital</p>
+                <p>Social Marketing<br>
+                  Owned Media<br>
+                  Paid Media <br>
+                  Desarrollo de audiencias<br>
+                  Análisis<br>
+                  Campañas creativas & ejecución</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Web</p>
+                <p>Diseño y Desarrollo Web<br>
+                  Aplicaciones Web<br>
+                  Arquitectura de información<br>
+                  Diseño de Interfaz del Usuario ( UI ) <br>
+                  Diseño de Experiencia de Usuario (UX)<br> 
+                  </p>
+            </div>
+          </div><!-- row -->
+          <div class="row text-row">
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Social Media</p>
+                <p>Estrategia de Redes Sociales<br>
+                  Community management<br>
+                  Paid campaigns</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Audiovisual</p>
+                <p>Producción de Video<br>
+                  Edición de video<br>
+                  Diseño y producción de audio<br>
+                  Estudio de grabación y voz profesional</p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">Motion</p>
+                <p>Animación<br>
+                  Motion graphics<br>
+                  Post producción<br>
+                  Modelado en 3D </p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 text-box">
+              <p class="title">VR</p>
+                <p>Visita nuestro landing page</p>
+            </div>
+          </div><!-- row -->
         </div><!-- carousel-item -->  
-        <div class="carousel-item">
-          THIRD
+        <div class="carousel-item" id="itemThree">
+          <div class="row" style="margin: 5% 0;">
+            <div class="col align-self-start">
+              <p class="bigger-text" id="bigger-text">¿Cómo buscamos diferenciarnos?</p>
+            </div> <!-- col--> 
+            <div class="col align-self-end">
+              <p class="title">No seremos sólo una agencia.</p>
+              <p>Queremos ser un aliado de tu marca.
+                Nos impulsan los insights, KPIs, nuestra metodología y el pensamiento creativo. Hemos desarrollado procesos de operación para nuestros clientes y así lograr resultados transformadores y exitosos de forma ágil y consistente. </p>
+            </div>
+          </div>
+          <div class="row text-row">
+            <div class="col-md-3 text-box">
+              <p class="title">Creatividad</p>
+                <p>Todo el tiempo buscamos que la creatividad se vuelva parte de nuestra cultura.<br> Investigamos la manera de ser más inteligentes, creativos, inovadores y relevantes para las necesidades de nuestros clientes.</p>
+            </div>
+            <div class="col-md-3 text-box">
+              <p class="title">Servicio</p>
+                <p>Hemos diseñado nuestro proceso para dar una respuesta a tiempo y de calidad a nuestros clientes.<br>Sabemos que el mercado está cambiando constantemente, y estamos listos para darte el servicio que esperas y necesitas.</p>
+            </div>
+            <div class="col-md-3 text-box">
+              <p class="title">Equipo</p>
+                <p>Nuestro equipo es tu equipo también. Sin importar si llevas años construyendo tu marca o si eres nuevo en la industria, seremos tus compañeros en la conquista de tus metas.</p>
+            </div>
+            <div class="col-md-3 text-box">
+              <p class="title">Equidad</p>
+                <p>Desde una empresa con reconocimiento mundial hasta una startup que apenas comienza, no ponemos obstáculos para trabajar. Mientras el proyecto requiera creatividad e inovación estaremos emocionados de participaren tu nuevo proyecto.</p>
+            </div>
+          </div><!-- row -->  
+          <div class="row dark-row text-row" style="background-color: #ededed;">
+            <div class="col align-self-center">
+              <p class="title">¿Relaciones de larga distancia? No hay problema.</p>
+              <p>¿Estás buscando una agencia cerca de ti pero no encuentras lo que necesitas?<br> Nosotros sabemos cómo trabajar contigo aunque no estemos a la vuelta de la cuadra. Muchos de nuestros clientes están fuera de la Ciudad de México desde los Cabos hasta Monterrey, incluso en otros países como Brasil y Argentina. <br>Aunque enviar tu dinero lejos puede ser un poco intimidante, nosotros adaptamos nuestros procesos de comunicación para que encaje en tus necesidades y preferencias.</p>
+            </div>  
+          </div>
         </div><!-- carousel-item -->  
-        <div class="carousel-item">
+        <div class="carousel-item" id="itemFour">
           FOURTH
         </div><!-- carousel-item -->
       </div><!-- carousel inner-->
@@ -470,7 +613,41 @@
     </div><!-- myCarousel -->
   </section>
 </div><!-- body-odi -->
- <a id="back-to-top" href="#" class="back-to-top" role="button" data-placement="left"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true" style="color: #009ee2;"></i></a>
+<footer>
+  <div class="row" id="contact">
+  <div class="col-md-4">
+    <p class="footer">escríbenos</p>
+    <p style="margin-top: 60px;">ping@pong.com.mx</p>
+    <p>55 3099 6403</p>
+    <p>55 6588 3697</p>
+  </div>
+  <div class="col-md-4">
+    <p class="footer">visítanos</p>
+    <p style="margin-top: 60px;">Eje Central #555</p>
+    <p>Narvarte, Benito Juárez</p>
+    <p>CDMX</p>
+  </div>
+  <div class="col-md-4">
+    <p class="footer">platícanos tu proyecto</p>
+      <form class="forma">
+       
+        <div class="row">
+          <div class="col">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>  
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="message" rows="2" placeholder="Leave a message"></textarea>
+        </div>
+        <button type="submit" class="btn submit">Enviar</button>
+      </form>
+  </div>
+  </div>
+  <a id="back-to-top" href="#" class="back-to-top" role="button" data-placement="left"><i class="fa fa-chevron-up fa-3x" aria-hidden="true" style="color: #999999;"></i></a>
+</footer> 
 </body>
 
 </html>
